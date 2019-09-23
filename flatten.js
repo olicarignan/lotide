@@ -1,31 +1,3 @@
-const eqArrays = function (arrayOne, arrayTwo) {
-  let isTrue;
-  for (let i = 0; i < arrayOne.length; i++) {
-    if (arrayOne[i] === arrayTwo[i]) {
-      isTrue = true;
-    } else {
-      isTrue = false;
-    }
-  }
-  return isTrue;
-}
-
-const assertArraysEqual = function (arrayOne, arrayTwo) {
-  let isTrue;
-  for (let i = 0; i < arrayOne.length; i++) {
-    if (arrayOne[i] === arrayTwo[i]) {
-      isTrue = true;
-    } else {
-      isTrue = false;
-    }
-  }
-  if (isTrue === true) {
-    console.log(`👌👌👌Assertion Passed:  ${arrayOne} ===  ${arrayTwo}`);
-  } else {
-    console.log(`🚨🚨🚨Assertion Failed: ${arrayOne} !== ${arrayTwo}`);
-  }
-}
-
 const flatten = function (input) {
   let output = [];
   for (let i = 0; i < input.length; i++) {
@@ -40,6 +12,4 @@ const flatten = function (input) {
     return output;
   } 
 
-
-
-console.log(flatten([1, 2, [3, 4], 5, [6]]));
+  module.exports = flatten;
