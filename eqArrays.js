@@ -8,9 +8,6 @@ const eqArrays = function (arrayOne, arrayTwo) {
     }
   }
   return isTrue;
-}
+};
 
-  
-
-
-console.log(eqArrays(["1", "2", "3"], ["1", "2", 3]));
+module.exports = eqArrays;
